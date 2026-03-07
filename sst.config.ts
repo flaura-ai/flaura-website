@@ -1,5 +1,5 @@
 import { SSTConfig } from "sst";
-import { NextjsSite } from "sst/constructs";
+import { StaticSite } from "sst/constructs";
 
 export default {
   config(_input) {
@@ -10,11 +10,14 @@ export default {
   },
   stacks(app) {
     app.stack(function Site({ stack }) {
-      const site = new NextjsSite(stack, "site", {
+      const site = new StaticSite(stack, "site", {
+        path: ".",
+        buildOutput: "out",
+        buildCommand: "npm run build",
         customDomain: {
           domainName: "flaura.ai",
           domainAlias: "www.flaura.ai",
-          hostedZone: "flaura.ai"
+          hostedZone: "flaura.ai",
         },
         environment: {
           NODE_ENV: "production",
