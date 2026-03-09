@@ -20,7 +20,7 @@ Static marketing site for flaura.ai. All pages are prerendered at build time (`o
 
 **Page sections** (assembled in `app/page.tsx`): `Navbar` → `Hero` → `HowItWorks` → `Features` → `Testimonial` → `CtaSection` → `Footer`
 
-**Fonts:** DM Sans (`font-sans`) for body, Playfair Display (`font-serif`) for headings — both loaded via `next/font/google` in `app/layout.tsx`.
+**Fonts:** Inter (`font-sans`) for body, Lora (`font-serif`) for headings — both loaded via `next/font/google` in `app/layout.tsx`.
 
 **UI components:** `components/ui/` contains shadcn/ui (Radix UI) primitives — treat as library code, don't modify unless necessary.
 

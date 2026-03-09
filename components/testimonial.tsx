@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import { Quote } from "lucide-react"
+import { Users, Sparkles } from "lucide-react"
 
 export function Testimonial() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -28,20 +28,51 @@ export function Testimonial() {
       ref={sectionRef}
       className="opacity-0 translate-y-8 transition-all duration-700 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 px-6 py-20 md:py-28"
     >
-      <div className="mx-auto max-w-3xl text-center">
-        <Quote className="mx-auto mb-6 h-10 w-10 text-primary/30" />
-        <blockquote className="font-serif text-2xl font-medium leading-relaxed tracking-tight text-foreground md:text-3xl">
-          The only person you are destined to become is the person you decide to
-          be.
-        </blockquote>
-        <p className="mt-6 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-          Ralph Waldo Emerson
-        </p>
-        <div className="mx-auto mt-10 h-px w-24 bg-border" />
-        <p className="mt-10 text-muted-foreground">
-          Join thousands of ambitious people already transforming their lives
-          with Flaura. Your testimonials will appear here soon.
-        </p>
+      <div className="mx-auto max-w-4xl">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 mb-6">
+            <Users className="h-5 w-5 text-primary" />
+            <span className="font-semibold text-primary">Join Our Community</span>
+          </div>
+          <h2 className="font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+            You're not alone in this
+          </h2>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="bg-background rounded-2xl p-6 border border-border shadow-sm">
+            <Sparkles className="h-8 w-8 text-primary mb-4" />
+            <p className="text-sm text-muted-foreground italic mb-3">
+              "I've been waiting for something like this for YEARS. Finally, an app that gets it."
+            </p>
+            <p className="text-xs font-medium text-foreground">— Waitlist Member</p>
+          </div>
+
+          <div className="bg-background rounded-2xl p-6 border border-border shadow-sm">
+            <Sparkles className="h-8 w-8 text-primary mb-4" />
+            <p className="text-sm text-muted-foreground italic mb-3">
+              "I have so many dreams but can't seem to start. This is exactly what I need."
+            </p>
+            <p className="text-xs font-medium text-foreground">— Waitlist Member</p>
+          </div>
+
+          <div className="bg-background rounded-2xl p-6 border border-border shadow-sm">
+            <Sparkles className="h-8 w-8 text-primary mb-4" />
+            <p className="text-sm text-muted-foreground italic mb-3">
+              "Tired of feeling like I can't trust myself to finish things. Ready for change."
+            </p>
+            <p className="text-xs font-medium text-foreground">— Waitlist Member</p>
+          </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <p className="text-lg text-foreground font-medium">
+            81 ambitious women are already waiting.
+          </p>
+          <p className="mt-2 text-muted-foreground">
+            Be part of the founding community that's choosing execution over consumption.
+          </p>
+        </div>
       </div>
     </section>
   )

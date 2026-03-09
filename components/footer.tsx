@@ -1,44 +1,20 @@
 import { Instagram, Twitter, Linkedin } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-card px-6 py-12">
+    <footer className="border-t border-border px-6 py-12">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
           <div className="flex flex-col items-center gap-3 md:items-start">
-            <a href="/" className="flex items-center gap-2">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 28 28"
-                fill="none"
-                className="text-primary"
-              >
-                <circle
-                  cx="14"
-                  cy="14"
-                  r="14"
-                  fill="currentColor"
-                  opacity="0.15"
-                />
-                <path
-                  d="M14 6c0 4-3 7-3 11a3 3 0 006 0c0-4-3-7-3-11z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M11 13c-2-1-5 0-6 3a3 3 0 004.5 2.5c2-1.5 1.5-4 1.5-5.5z"
-                  fill="currentColor"
-                  opacity="0.7"
-                />
-                <path
-                  d="M17 13c2-1 5 0 6 3a3 3 0 01-4.5 2.5c-2-1.5-1.5-4-1.5-5.5z"
-                  fill="currentColor"
-                  opacity="0.7"
-                />
-              </svg>
-              <span className="text-lg font-bold tracking-tight text-foreground">
-                Flaura
-              </span>
+            <a href="/" className="flex items-center">
+              <Image
+                src="/logo.svg"
+                alt="Flaura AI"
+                width={120}
+                height={50}
+                className="h-8 w-auto"
+              />
             </a>
             <p className="text-sm text-muted-foreground">
               Your AI Growth Companion

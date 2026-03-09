@@ -4,80 +4,89 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.98 0.005 60);
-  --foreground: oklch(0.25 0.02 50);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.25 0.02 50);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.25 0.02 50);
-  --primary: oklch(0.65 0.18 40);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.95 0.01 60);
-  --secondary-foreground: oklch(0.30 0.02 50);
-  --muted: oklch(0.95 0.008 60);
-  --muted-foreground: oklch(0.50 0.02 50);
-  --accent: oklch(0.92 0.03 60);
-  --accent-foreground: oklch(0.30 0.02 50);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.90 0.01 60);
-  --input: oklch(0.90 0.01 60);
-  --ring: oklch(0.65 0.18 40);
-  --chart-1: oklch(0.65 0.18 40);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.75rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Flaura Brand Colors */
+  --cosmic-latte: #FFF5E1;
+  --thistle: #CDB4DB;
+  --bittersweet: #FF6F61;
+  --peach: #FFC3A0;
+  --peach-yellow: #FADFA1;
+  --salmon-pink: #FF9EAA;
+  
+  /* Theme Colors */
+  --background: #FFF5E1; /* Cosmic Latte */
+  --foreground: #2D2D2D; /* Dark gray for text */
+  --card: #FFFFFF;
+  --card-foreground: #2D2D2D;
+  --popover: #FFFFFF;
+  --popover-foreground: #2D2D2D;
+  --primary: #FF6F61; /* Bittersweet */
+  --primary-foreground: #FFFFFF;
+  --secondary: #CDB4DB; /* Thistle */
+  --secondary-foreground: #2D2D2D;
+  --muted: #FADFA1; /* Peach Yellow */
+  --muted-foreground: #666666;
+  --accent: #FF9EAA; /* Salmon Pink */
+  --accent-foreground: #FFFFFF;
+  --destructive: #D32F2F;
+  --destructive-foreground: #FFFFFF;
+  --border: #E8D5C4;
+  --input: #E8D5C4;
+  --ring: #FF6F61;
+  --chart-1: #FF6F61;
+  --chart-2: #CDB4DB;
+  --chart-3: #FFC3A0;
+  --chart-4: #FADFA1;
+  --chart-5: #FF9EAA;
+  --radius: 1rem;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #2D2D2D;
+  --sidebar-primary: #FF6F61;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #FFF5E1;
+  --sidebar-accent-foreground: #2D2D2D;
+  --sidebar-border: #E8D5C4;
+  --sidebar-ring: #FF6F61;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: #1A1A1A;
+  --foreground: #FFF5E1;
+  --card: #2D2D2D;
+  --card-foreground: #FFF5E1;
+  --popover: #2D2D2D;
+  --popover-foreground: #FFF5E1;
+  --primary: #FF6F61;
+  --primary-foreground: #FFFFFF;
+  --secondary: #CDB4DB;
+  --secondary-foreground: #1A1A1A;
+  --muted: #3D3D3D;
+  --muted-foreground: #B8B8B8;
+  --accent: #FF9EAA;
+  --accent-foreground: #FFFFFF;
+  --destructive: #EF5350;
+  --destructive-foreground: #FFFFFF;
+  --border: #3D3D3D;
+  --input: #3D3D3D;
+  --ring: #FF6F61;
+  --chart-1: #FF6F61;
+  --chart-2: #CDB4DB;
+  --chart-3: #FFC3A0;
+  --chart-4: #FADFA1;
+  --chart-5: #FF9EAA;
+  --sidebar: #2D2D2D;
+  --sidebar-foreground: #FFF5E1;
+  --sidebar-primary: #FF6F61;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #3D3D3D;
+  --sidebar-accent-foreground: #FFF5E1;
+  --sidebar-border: #3D3D3D;
+  --sidebar-ring: #FF6F61;
 }
 
 @theme inline {
-  --font-sans: var(--font-dm-sans), 'DM Sans', sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
-  --font-serif: var(--font-playfair), 'Playfair Display', serif;
+  --font-serif: 'Lora', 'Georgia', serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -123,4 +132,43 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Flaura Brand Color Utilities */
+.bg-cosmic-latte {
+  background-color: #FFF5E1;
+}
+.bg-thistle {
+  background-color: #CDB4DB;
+}
+.bg-bittersweet {
+  background-color: #FF6F61;
+}
+.bg-peach {
+  background-color: #FFC3A0;
+}
+.bg-peach-yellow {
+  background-color: #FADFA1;
+}
+.bg-salmon-pink {
+  background-color: #FF9EAA;
+}
+
+.text-cosmic-latte {
+  color: #FFF5E1;
+}
+.text-thistle {
+  color: #CDB4DB;
+}
+.text-bittersweet {
+  color: #FF6F61;
+}
+.text-peach {
+  color: #FFC3A0;
+}
+.text-peach-yellow {
+  color: #FADFA1;
+}
+.text-salmon-pink {
+  color: #FF9EAA;
 }

@@ -1,24 +1,24 @@
 import type { Metadata, Viewport } from 'next'
-import { DM_Sans, Playfair_Display } from 'next/font/google'
+import { Inter, Lora } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const lora = Lora({ subsets: ["latin"], variable: "--font-lora" });
 
 export const metadata: Metadata = {
-  title: 'Flaura — Your AI Growth Companion',
-  description: 'Flaura is an AI-powered personal growth app that helps ambitious people build identity-aligned habits through 90-day quests. Build confidence, track streaks, journal, and grow.',
+  title: 'Flaura AI — Turn Your Dreams Into Action',
+  description: 'For ambitious women who have big goals but struggle with consistency. Flaura helps you stop consuming and start executing through identity-based affirmations and actionable systems.',
   generator: 'v0.app',
   openGraph: {
-    title: 'Flaura — Your AI Growth Companion',
-    description: 'Build identity-aligned habits through 90-day quests with AI-powered coaching.',
+    title: 'Flaura AI — Turn Your Dreams Into Action',
+    description: 'For ambitious women who have big goals but struggle with consistency. Stop consuming, start executing.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Flaura — Your AI Growth Companion',
-    description: 'Build identity-aligned habits through 90-day quests with AI-powered coaching.',
+    title: 'Flaura AI — Turn Your Dreams Into Action',
+    description: 'For ambitious women who have big goals but struggle with consistency. Stop consuming, start executing.',
   },
   icons: {
     icon: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#d4845a',
+  themeColor: '#FF6F61',
   width: 'device-width',
   initialScale: 1,
 }
@@ -51,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${playfair.variable}`}>
+    <html lang="en" className={`${inter.variable} ${lora.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

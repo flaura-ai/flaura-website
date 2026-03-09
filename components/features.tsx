@@ -2,50 +2,50 @@
 
 import { useEffect, useRef } from "react"
 import {
-  Brain,
+  Heart,
   Target,
-  Sun,
-  BookOpen,
-  Flame,
-  WifiOff,
+  Repeat,
+  TrendingUp,
+  Sparkles,
+  CheckCircle2,
 } from "lucide-react"
 
 const features = [
   {
-    icon: Brain,
-    title: "AI-Powered Habit Plans",
+    icon: Heart,
+    title: "Identity-Based Affirmations",
     description:
-      "Intelligent algorithms craft habits aligned to your identity, adapting as you grow and evolve.",
+      "Reframe how you see yourself with personalized affirmations that rewire your brain through daily repetition. You're not 'inconsistent'—you're becoming consistent.",
   },
   {
     icon: Target,
-    title: "90-Day Identity Quests",
+    title: "90-Day Quest System",
     description:
-      "Structured transformation journeys with clear milestones so you can see exactly how far you have come.",
+      "Break your big yearly goals into focused 90-day quests. No more overwhelm. Just clear, achievable milestones that actually move you forward.",
   },
   {
-    icon: Sun,
-    title: "Daily Affirmations",
+    icon: Repeat,
+    title: "Daily Habits & Systems",
     description:
-      "Start each morning with personalized affirmations that reinforce your growth mindset and values.",
+      "Turn your quests into small daily actions. You don't rise to your goals—you fall to the level of your systems. We help you build the right ones.",
   },
   {
-    icon: BookOpen,
-    title: "Journal (Text + Voice)",
+    icon: Sparkles,
+    title: "AI-Powered Personalization",
     description:
-      "Reflect through writing or voice entries. Capture thoughts naturally, whenever inspiration strikes.",
+      "Every affirmation, every quest, every habit is tailored to YOU. Based on your identity, your goals, and who you're becoming.",
   },
   {
-    icon: Flame,
-    title: "Streak Tracking & Analytics",
+    icon: TrendingUp,
+    title: "Progress Tracking",
     description:
-      "Visual progress dashboards and streak counters that celebrate your consistency and momentum.",
+      "See your transformation unfold. Track your quests, celebrate your wins, and build the evidence that you ARE someone who follows through.",
   },
   {
-    icon: WifiOff,
-    title: "Works Offline",
+    icon: CheckCircle2,
+    title: "Rebuild Self-Trust",
     description:
-      "Local-first architecture means your growth never pauses. Syncs seamlessly when you reconnect.",
+      "Every promise you keep to yourself strengthens your self-trust. Every completed daily habit proves you're becoming who you say you want to be.",
   },
 ]
 
@@ -72,22 +72,25 @@ export function Features() {
   return (
     <section
       ref={sectionRef}
-      className="opacity-0 translate-y-8 transition-all duration-700 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 bg-card px-6 py-20 md:py-28"
+      className="opacity-0 translate-y-8 transition-all duration-700 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 px-6 py-20 md:py-28"
     >
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 text-center">
           <span className="mb-3 inline-block text-sm font-medium uppercase tracking-widest text-primary">
-            Key Features
+            How Flaura Works
           </span>
           <h2 className="font-serif text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Everything you need to grow
+            Two parts. One transformation.
           </h2>
+          <p className="mt-4 mx-auto max-w-2xl text-lg text-muted-foreground">
+            Stop consuming content and start executing on your goals through identity transformation and actionable systems.
+          </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group rounded-2xl border border-border bg-background p-8 transition-all hover:border-primary/30 hover:shadow-md"
+              className="group rounded-2xl border border-border bg-background p-8 transition-all hover:border-primary/30 hover:shadow-lg"
             >
               <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                 <feature.icon className="h-6 w-6" />
