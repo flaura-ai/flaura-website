@@ -41,10 +41,8 @@ export function Hero() {
             Flaura helps you reframe your identity and break down big goals into small, actionable steps you'll actually complete.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 lg:justify-start w-full sm:w-auto">
-            <a 
-              href="https://growwithflaura.beehiiv.com/?utm_source=website&utm_medium=hero_cta" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <a
+              href="#waitlist"
               className="w-full sm:w-auto"
             >
               <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all">

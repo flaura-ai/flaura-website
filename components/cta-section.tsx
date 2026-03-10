@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import { Button } from "./ui/button"
+import Script from "next/script"
 
 export function CtaSection() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -39,21 +39,17 @@ export function CtaSection() {
         <p className="mt-4 text-base leading-relaxed text-foreground font-medium">
           Be the first to know when Flaura launches in March 2026. Get exclusive early access and founder pricing.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a 
-            href="https://growwithflaura.beehiiv.com/?utm_source=website&utm_medium=cta_section" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto"
-          >
-            <Button 
-              size="lg" 
-              variant="secondary"
-              className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-10 py-7 text-lg rounded-full shadow-2xl hover:shadow-3xl transition-all hover:scale-105"
-            >
-              Join the Waitlist →
-            </Button>
-          </a>
+        <Script src="https://subscribe-forms.beehiiv.com/embed.js" strategy="afterInteractive" />
+        <Script src="https://subscribe-forms.beehiiv.com/attribution.js" strategy="afterInteractive" />
+        <div className="mt-8 flex items-center justify-center">
+          <iframe
+            src="https://subscribe-forms.beehiiv.com/537a3975-5972-43f9-be66-ad861d8fb732"
+            className="beehiiv-embed"
+            data-test-id="beehiiv-embed"
+            frameBorder="0"
+            scrolling="no"
+            style={{ width: 954, maxWidth: "100%", height: 377, margin: 0, borderRadius: 0, backgroundColor: "transparent", boxShadow: "0 0 #0000" }}
+          />
         </div>
         <p className="mt-6 text-sm text-muted-foreground">
           Coming soon to iOS and Android • No credit card required
