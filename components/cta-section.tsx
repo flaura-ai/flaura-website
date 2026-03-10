@@ -44,11 +44,11 @@ export function CtaSection() {
         <div className="mt-8 flex items-center justify-center">
           <iframe
             src="https://subscribe-forms.beehiiv.com/537a3975-5972-43f9-be66-ad861d8fb732"
-            className="beehiiv-embed"
+            className="beehiiv-embed h-[500px] sm:h-[377px]"
             data-test-id="beehiiv-embed"
             frameBorder="0"
             scrolling="no"
-            style={{ width: 954, maxWidth: "100%", height: 377, margin: 0, borderRadius: 0, backgroundColor: "transparent", boxShadow: "0 0 #0000" }}
+            style={{ width: 954, maxWidth: "100%", margin: 0, borderRadius: 0, backgroundColor: "transparent", boxShadow: "0 0 #0000" }}
           />
         </div>
         <p className="mt-6 text-sm text-muted-foreground">
